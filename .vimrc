@@ -37,6 +37,7 @@ NeoBundleCheck
 syntax on
 colorscheme desert
 
+set hlsearch
 set laststatus=2
 set number
 set t_Co=256
