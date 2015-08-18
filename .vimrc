@@ -37,9 +37,11 @@ NeoBundleCheck
 syntax on
 colorscheme desert
 
+set expandtab
 set hlsearch
 set laststatus=2
 set number
+set shiftwidth=2
 set t_Co=256
 
 " neocomplete
