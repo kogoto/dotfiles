@@ -1,6 +1,4 @@
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
-
+"NeoBundle Scripts-----------------------------
 if has('vim_starting')
   if &compatible
     set nocompatible               " Be iMproved
@@ -21,9 +19,11 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Refer to |:NeoBundle-examples|.
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'bling/vim-airline'
-NeoBundle 'vim-scripts/sudo.vim'
+NeoBundle 'elixir-lang/vim-elixir'
 NeoBundle 'scrooloose/nerdtree'
+NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplete.vim'
+NeoBundle 'vim-scripts/sudo.vim'
 
 call neobundle#end()
 
@@ -33,15 +33,23 @@ filetype plugin indent on
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
 NeoBundleCheck
+"End NeoBundle Scripts-------------------------
 
 syntax on
-colorscheme desert
+colorscheme elflord
 
+set noswapfile
+set backspace=2
 set expandtab
 set hlsearch
-set laststatus=2
+set incsearch
 set number
 set shiftwidth=2
+set smartindent
+set softtabstop=0
+set tabstop=2
+set nocompatible
+set laststatus=2
 set t_Co=256
 
 " neocomplete
