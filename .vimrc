@@ -20,6 +20,9 @@ NeoBundleFetch 'Shougo/neobundle.vim'
 " Note: You don't set neobundle setting in .gvimrc!
 NeoBundle 'bling/vim-airline'
 NeoBundle 'elixir-lang/vim-elixir'
+NeoBundle 'fatih/vim-go'
+NeoBundle 'hynek/vim-python-pep8-indent'
+NeoBundle 'nvie/vim-flake8'
 NeoBundle 'scrooloose/nerdtree'
 NeoBundle 'scrooloose/syntastic'
 NeoBundle 'Shougo/neocomplete.vim'
@@ -51,6 +54,9 @@ set tabstop=2
 set nocompatible
 set laststatus=2
 set t_Co=256
+set clipboard=unnamed,autoselect
 
 " neocomplete
 let g:neocomplete#enable_at_startup = 1
+
+autocmd FileType html setl filetype=htmldjango
